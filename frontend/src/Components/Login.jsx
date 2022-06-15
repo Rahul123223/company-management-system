@@ -45,7 +45,7 @@ export const Login = () => {
     };
 
     dispatch(login_loading());
-    fetch("https://localhost:8080/login", {
+    fetch("http://localhost:8080/login", {
       method: "POST",
       body: JSON.stringify(useDetails),
       headers: {

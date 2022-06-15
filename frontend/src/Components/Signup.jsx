@@ -53,7 +53,7 @@ export function Signup() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch("https://localhost:8080/signup", {
+    fetch("http://localhost:8080/signup", {
       method: "POST",
       body: JSON.stringify(user),
       headers: {
